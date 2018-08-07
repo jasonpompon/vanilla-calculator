@@ -1,4 +1,7 @@
-function addNumber(num1, num2) {
-    const sum  = num1 * num2;
-    return sum;
-}
+const resultText = document.querySelector('.result-pane');
+const buttonsWrapper = document.querySelector('.section-buttons')
+
+buttonsWrapper.addEventListener('click', (e) => {
+    resultText.innerText = e.target.innerText;
+})
+
