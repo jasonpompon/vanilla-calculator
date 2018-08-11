@@ -64,6 +64,7 @@ header {
 
 .row button:last-child {
     background-color: #df974c;
+    color: #fff;
 }
 
 .row button:last-child:active {
