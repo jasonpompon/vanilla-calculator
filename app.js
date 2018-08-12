@@ -1,7 +1,6 @@
 let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
-const screen = document.querySelector(".result-pane");
 
 function buttonClick(value) {
     if (isNaN(parseInt(value))) {
@@ -83,6 +82,7 @@ function handleSymbol(value) {
 }
 
 function rerender() {
+    const screen = document.querySelector(".result-pane");
     screen.innerText = buffer;
 }
 
